@@ -11,14 +11,20 @@ Python utility for automating search and replace operations in HTML and Markdown
 - Preserves the directory structure of the input folder in the output folder
 - Simple configuration: define patterns and replacements in a CSV file
 
+## Usage Guidelines
+
+- In the configuration file, each row in the "match" column must have an assigned item in the same row of the "replace" column.
+- The tool performs case-sensitive search and replace operations on files in the input folder. Make sure that the match and replace strings in the configuration file match the case of the strings in the input files.
+- The search patterns must be specified using Python regex syntax. Other regex syntaxes may not work as expected.
+
 ## Getting Started
 
-1. Clone the repository and navigate to the project directory.
-2. Install the necessary dependencies by running `pip install -r requirements.txt`.
-3. Prepare your input folder containing the HTML or Markdown files.
-4. Create a configuration file in CSV format, with "match" and "replace" columns.
-5. Run the tool using the command `python search_replace.py --config <path_to_config.csv> --input <path_to_input_folder>`.
-6. The modified files will be saved in the output folder in the same directory as the input folder.
+1. Clone the repository to your local machine and navigate to the project directory.
+2. Install the required dependencies by running pip install -r requirements.txt.
+3. Create a new input folder within the project directory and add the HTML or Markdown files you want to modify.
+4. Modify the "match" and "replace" columns in the inputconfig.csv file according to your needs.
+5. Run the tool by executing the command python3 sandr.py in the terminal/command prompt.
+6. The modified files will be generated in the output folder within the project directory, with the same directory structure as the input folder.
 
 ## Configuration File
 
