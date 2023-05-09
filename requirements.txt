@@ -1,0 +1,2 @@
+markdown==3.4.3
+pandas==2.0.1

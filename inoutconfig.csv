@@ -1,0 +1,3 @@
+﻿Match,,,,,Replace
+other,,,,,kasdks
+"(<a href=\""http:.+?\/?\"">)(.+?)(<\/a>)",,,,,\2
