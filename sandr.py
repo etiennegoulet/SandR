@@ -31,7 +31,7 @@ re_replace=list(filter(lambda x: (str(x) != 'nan' and str(x) != ''), re_replace)
 for file_name in os.listdir(input_folder_path):
     if file_name.endswith(".html") or file_name.endswith(".md"): #HTML IMPORT AND SEARCH AND REPLACE
         file_path = os.path.join(input_folder_path, file_name)
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             html_string = f.read()
             #for i, o in zip(input,output):     #replace element 1 of input by element 1 of output
             #    html_string = html_string.replace(i,o)
