@@ -36,7 +36,7 @@ for file_name in os.listdir(input_folder_path):
         base_name, ext = os.path.splitext(file_name)
         new_file_name = base_name + ext
         new_file_path = os.path.join(output_folder_path, new_file_name)
-        with open(new_file_path, 'w') as f:
+        with open(new_file_path, 'w', encoding='utf-8') as f:
             f.write(html_string)
     #if file_name == base_name + "_files":
         #dir_name = base_name +"_files"
