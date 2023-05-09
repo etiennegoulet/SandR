@@ -16,10 +16,6 @@ if not os.path.exists(output_folder_path):
 
 df = pd.read_csv('/Users/etienne.goulet/Documents/Python Projects/sandr final/inoutconfig.csv')
 #input = df['Input'].tolist() # input list
-#input=list(filter(lambda x: (str(x) != 'nan' and str(x) != ''), input)) # this filters out the nan for all values in list
-
-#output=df['Output'].tolist() # output list
-#output=list(filter(lambda x: (str(x) != 'nan' and str(x) != ''), output)) # nan filter
 
 re_match=df['Match'].tolist() # regex match list
 re_match=list(filter(lambda x: (str(x) != 'nan' and str(x) != ''), re_match)) # nan filter
