@@ -26,6 +26,29 @@ Python utility for automating search and replace operations in HTML and Markdown
 5. Run the tool by executing the command python3 sandr.py in the terminal/command prompt.
 6. The modified files will be generated in the output folder within the project directory, with the same directory structure as the input folder.
 
+## Command-line Usage
+
+To use the Search and Replace Tool from the command prompt or terminal, follow the instructions below:
+
+1. Open the command prompt or terminal on your machine.
+2. Navigate to the directory where the tool is located by using the cd command.
+3. Execute the following command to run the tool:
+
+'''
+python3 sandr.py [-input <input_folder_path>] [-config <config_file_path>]
+
+By default, the tool will use the folder and files within the repository. If you want to specify custom input folder and    configuration file paths, you can use the optional -input and -config options.
+
+Example using custom paths:
+python search_replace.py -input /path/to/custom_input_folder -config /path/to/custom_config/inoutconfig.csv
+
+'''
+
+4. The tool will process the specified input folder and apply the search and replace operations based on the provided configuration file. If no custom paths are specified, it will use the default folder and files within the repository.
+5. The modified files will be saved in the output folder, which will be created in the same directory as the input folder. If the output folder already exists, the modified files will be placed in that folder while preserving the original directory structure.
+
+Note: The sandr.py file is the main script for the tool. Ensure that Python is installed on your system and accessible from the command prompt or terminal before running the tool.
+
 ## Configuration File
 
 The configuration file is a CSV document with two columns: "match" and "replace". In the "match" column, you specify the search patterns, which can be specific strings or regular expressions. The corresponding replacements are provided in the "replace" column. You can use static strings or capture groups from regex patterns for more advanced replacements.
