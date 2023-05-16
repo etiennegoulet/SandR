@@ -71,5 +71,5 @@ for file_name in os.listdir(input_folder_path):
         #dir_name = base_name +"_files"
         #shutil.copytree(os.path.join(input_folder_path, file_name), os.path.join(output_folder_path, dir_name))
 
-print("Thank you and have a good day!")
+print("All files succesfully processed.")
 
