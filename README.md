@@ -52,18 +52,14 @@ Note: The sandr.py file is the main script for the tool. Ensure that Python is i
 
 ## Configuration File
 
-The configuration file is a CSV document with two columns: "match" and "replace". In the "match" column, you specify the search patterns, which can be specific strings or regular expressions. The corresponding replacements are provided in the "replace" column. You can use static strings or capture groups from regex patterns for more advanced replacements.
+The configuration file is a CSV document with three columns: "match", "replace" and "type". In the "match" column, you specify the search patterns, which can be specific strings or regular expressions. The corresponding replacements are provided in the "replace" column. You can use static strings or capture groups from regex patterns for more advanced replacements, but they need to be specified in the "type" column, using "string" or "regex".
 
 **Example:**
 
-| Match         | Replace       |
-| ------------- | ------------- |
-| Hello, world! | Hi, everyone! |
-| (\\w+) (\\w+) | \\2, \\1      |
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+| Match         | Replace       | Type          |
+| ------------- | ------------- | ------------- |
+| Hello, world! | Hi, everyone! | string        |
+| (\\w+) (\\w+) | \\2, \\1      | regex         |
 
 ## Contributing
 
